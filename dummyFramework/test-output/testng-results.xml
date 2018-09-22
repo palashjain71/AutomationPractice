@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="11502" started-at="2018-09-22T08:12:18Z" finished-at="2018-09-22T08:12:29Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="11502" started-at="2018-09-22T08:12:18Z" finished-at="2018-09-22T08:12:29Z">
+      <class name="package1.testDataProvider">
+        <test-method status="PASS" signature="initializeWebdriver()[pri:0, instance:package1.testDataProvider@548e7350]" name="initializeWebdriver" is-config="true" duration-ms="1217" started-at="2018-09-22T08:12:17Z" finished-at="2018-09-22T08:12:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method status="PASS" signature="beforeTestKillBrowser(org.testng.ITestContext)[pri:0, instance:package1.testDataProvider@548e7350]" name="beforeTestKillBrowser" is-config="true" duration-ms="15" started-at="2018-09-22T08:12:18Z" finished-at="2018-09-22T08:12:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@704b2127]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestKillBrowser -->
+        <test-method status="PASS" signature="launchApplication(org.testng.ITestContext)[pri:0, instance:package1.testDataProvider@548e7350]" name="launchApplication" is-config="true" duration-ms="4771" started-at="2018-09-22T08:12:18Z" finished-at="2018-09-22T08:12:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@704b2127]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="PASS" signature="testDataProvider2(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:package1.testDataProvider@548e7350]" name="testDataProvider2" duration-ms="9" started-at="2018-09-22T08:12:23Z" data-provider="DataProvider1" finished-at="2018-09-22T08:12:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider2 -->
+        <test-method status="PASS" signature="quitWebdriver(org.testng.ITestContext)[pri:0, instance:package1.testDataProvider@548e7350]" name="quitWebdriver" is-config="true" duration-ms="643" started-at="2018-09-22T08:12:23Z" finished-at="2018-09-22T08:12:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@704b2127]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitWebdriver -->
+        <test-method status="PASS" signature="launchApplication(org.testng.ITestContext)[pri:0, instance:package1.testDataProvider@548e7350]" name="launchApplication" is-config="true" duration-ms="4913" started-at="2018-09-22T08:12:24Z" finished-at="2018-09-22T08:12:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@704b2127]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="PASS" signature="testDataProvider2(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:package1.testDataProvider@548e7350]" name="testDataProvider2" duration-ms="1" started-at="2018-09-22T08:12:29Z" data-provider="DataProvider1" finished-at="2018-09-22T08:12:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider2 -->
+        <test-method status="PASS" signature="quitWebdriver(org.testng.ITestContext)[pri:0, instance:package1.testDataProvider@548e7350]" name="quitWebdriver" is-config="true" duration-ms="612" started-at="2018-09-22T08:12:29Z" finished-at="2018-09-22T08:12:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@704b2127]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitWebdriver -->
+        <test-method status="PASS" signature="sendReportEmail()[pri:0, instance:package1.testDataProvider@548e7350]" name="sendReportEmail" is-config="true" duration-ms="312" started-at="2018-09-22T08:12:29Z" finished-at="2018-09-22T08:12:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendReportEmail -->
+      </class> <!-- package1.testDataProvider -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

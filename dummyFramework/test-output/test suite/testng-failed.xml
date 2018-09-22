@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [test suite]" parallel="tests">
+  <listeners>
+    <listener class-name="SupportLibraries.Listener"/>
+  </listeners>
+  <test thread-count="1" name="ValidationHeader_IndustrySolutions(failed)" parallel="tests">
+    <classes>
+      <class name="Ebiz.Entrymdoule.ValidationHeader_IndustrySolutions">
+        <methods>
+          <include name="quitWebdriver"/>
+          <include name="launchApplication"/>
+          <include name="initializeWebdriver"/>
+          <include name="beforeTestKillBrowser"/>
+          <include name="ValidationHeader_IndustrySolutions1"/>
+          <include name="sendReportEmail"/>
+          <include name="quitReport"/>
+        </methods>
+      </class> <!-- Ebiz.Entrymdoule.ValidationHeader_IndustrySolutions -->
+    </classes>
+  </test> <!-- ValidationHeader_IndustrySolutions(failed) -->
+  <test thread-count="1" name="ValidationHeader_ResidentialSection(failed)" parallel="tests">
+    <classes>
+      <class name="Ebiz.Entrymdoule.ValidationHeader_ResidentialSection">
+        <methods>
+          <include name="quitWebdriver"/>
+          <include name="ValidationHeader_ResidentialSection1"/>
+          <include name="launchApplication"/>
+          <include name="initializeWebdriver"/>
+          <include name="beforeTestKillBrowser"/>
+          <include name="sendReportEmail"/>
+          <include name="quitReport"/>
+        </methods>
+      </class> <!-- Ebiz.Entrymdoule.ValidationHeader_ResidentialSection -->
+    </classes>
+  </test> <!-- ValidationHeader_ResidentialSection(failed) -->
+  <test thread-count="1" name="ValidationHeader_ThinkGreen(failed)" parallel="tests">
+    <classes>
+      <class name="Ebiz.Entrymdoule.ValidationHeader_ThinkGreen">
+        <methods>
+          <include name="quitWebdriver"/>
+          <include name="launchApplication"/>
+          <include name="initializeWebdriver"/>
+          <include name="beforeTestKillBrowser"/>
+          <include name="ValidationHeader_ThinkGreen1"/>
+          <include name="sendReportEmail"/>
+          <include name="quitReport"/>
+        </methods>
+      </class> <!-- Ebiz.Entrymdoule.ValidationHeader_ThinkGreen -->
+    </classes>
+  </test> <!-- ValidationHeader_ThinkGreen(failed) -->
+</suite> <!-- Failed suite [test suite] -->
