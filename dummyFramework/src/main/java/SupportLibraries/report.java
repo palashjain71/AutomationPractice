@@ -124,15 +124,6 @@ public class report {
 		}
 	}
 
-	public static void EndTestAPI(ExtentTest test) {
-		try {
-			test.info(MarkupHelper.createLabel("Test Execution Completed", ExtentColor.INDIGO));
-			
-		} catch (Exception e) {
-			System.out.println("error " + e.getMessage());
-		}
-	}
-
 	public static void reportLink(ExtentTest test) {
 		test.info(MarkupHelper.createLabel("  <a href='" + reportName
 				+ "' target=\"_blank\" style=\"color: rgb(255, 255, 255)\"> Test Case link : " + reportName + "</a>",
@@ -181,54 +172,6 @@ public class report {
 					ExtentColor.RED));
 		}
 	}
-
-	public static void ConditionCheckTest_containsValueNegative(ExtentTest test, String actualstring,
-			String expectedstring, String ObjDesc) {
-
-		if (actualstring.contains(expectedstring)) {
-			test.log(Status.FAIL, MarkupHelper.createLabel(
-					("Object>>" + ObjDesc + "Actual value :" + actualstring + " Expected Value :" + expectedstring),
-					ExtentColor.RED));
-		} else {
-			test.log(Status.PASS, MarkupHelper.createLabel(
-					("Object>>" + ObjDesc + "Actual value :" + actualstring + " Expected Value :" + expectedstring),
-					ExtentColor.GREEN));
-		}
-	}
-
-	public static void FailTestStop(ExtentTest test, String Stepdetails) {
-
-		test.fail(MarkupHelper.createLabel(Stepdetails, ExtentColor.RED));
-		AssertJUnit.assertTrue(false);
-	}
-
-	public static void ConditionCheckTest_containsValuePositive(ExtentTest test, String actualstring,
-			String expectedstring, String ObjDesc) {
-		if (actualstring.contains(expectedstring)) {
-			test.log(Status.PASS, MarkupHelper.createLabel(
-					("Object>>" + ObjDesc + "Actual value :" + actualstring + " Expected Value :" + expectedstring),
-					ExtentColor.GREEN));
-		} else {
-			test.log(Status.FAIL, MarkupHelper.createLabel(
-					("Object>>" + ObjDesc + "Actual value :" + actualstring + " Expected Value :" + expectedstring),
-					ExtentColor.RED));
-		}
-	}
-
-	public static void ConditionCheck_doubleValues(ExtentTest test, double actualstring, double expectedstring,
-			String ObjDesc) {
-		if (Double.compare(actualstring, expectedstring) == 0) {
-			test.log(Status.PASS, MarkupHelper.createLabel(
-					("Object>>" + ObjDesc + "Actual value :" + actualstring + " Expected Value :" + expectedstring),
-					ExtentColor.GREEN));
-		} else {
-			test.log(Status.FAIL, MarkupHelper.createLabel(
-					("Object>>" + ObjDesc + "Actual value :" + actualstring + " Expected Value :" + expectedstring),
-					ExtentColor.RED));
-		}
-
-	}
-
 	public static void endReport(ExtentReports extent) {
 		extent.flush();
 	}

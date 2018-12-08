@@ -24,10 +24,8 @@ public class BrowserOpen {
 
 		} else if (browserName.equals("chrome")) {
 			DriverPath = systemDir + "\\src\\main\\java\\driver\\" + "chromedriver.exe";
-			ChromeOptions options = new ChromeOptions();
-			// options.addArguments("--start-maximized");
 			System.setProperty("webdriver.chrome.driver", DriverPath);
-			driver = new ChromeDriver(options);
+			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 		} else if (browserName.equals("ie")) {
 			DriverPath = systemDir + "\\src\\main\\java\\driver\\" + "IEDriverServer32.exe";

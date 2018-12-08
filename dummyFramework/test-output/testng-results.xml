@@ -2,117 +2,117 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11502" started-at="2018-09-22T08:12:18Z" finished-at="2018-09-22T08:12:29Z">
+  <suite name="test suite" duration-ms="20382" started-at="2018-12-08T06:49:10Z" finished-at="2018-12-08T06:49:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11502" started-at="2018-09-22T08:12:18Z" finished-at="2018-09-22T08:12:29Z">
-      <class name="package1.testDataProvider">
-        <test-method status="PASS" signature="initializeWebdriver()[pri:0, instance:package1.testDataProvider@548e7350]" name="initializeWebdriver" is-config="true" duration-ms="1217" started-at="2018-09-22T08:12:17Z" finished-at="2018-09-22T08:12:18Z">
+    <test name="test1" duration-ms="20382" started-at="2018-12-08T06:49:10Z" finished-at="2018-12-08T06:49:30Z">
+      <class name="package1.ToSignUpOnJOTForms">
+        <test-method status="PASS" signature="initializeWebdriver()[pri:0, instance:package1.ToSignUpOnJOTForms@343f4d3d]" name="initializeWebdriver" is-config="true" duration-ms="1432" started-at="2018-12-08T06:49:08Z" finished-at="2018-12-08T06:49:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeWebdriver -->
-        <test-method status="PASS" signature="beforeTestKillBrowser(org.testng.ITestContext)[pri:0, instance:package1.testDataProvider@548e7350]" name="beforeTestKillBrowser" is-config="true" duration-ms="15" started-at="2018-09-22T08:12:18Z" finished-at="2018-09-22T08:12:18Z">
+        <test-method status="PASS" signature="beforeTestKillBrowser(org.testng.ITestContext)[pri:0, instance:package1.ToSignUpOnJOTForms@343f4d3d]" name="beforeTestKillBrowser" is-config="true" duration-ms="8" started-at="2018-12-08T06:49:10Z" finished-at="2018-12-08T06:49:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@704b2127]]>
+                <![CDATA[org.testng.TestRunner@10e31a9a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestKillBrowser -->
-        <test-method status="PASS" signature="launchApplication(org.testng.ITestContext)[pri:0, instance:package1.testDataProvider@548e7350]" name="launchApplication" is-config="true" duration-ms="4771" started-at="2018-09-22T08:12:18Z" finished-at="2018-09-22T08:12:23Z">
+        <test-method status="PASS" signature="launchApplication(org.testng.ITestContext)[pri:0, instance:package1.ToSignUpOnJOTForms@343f4d3d]" name="launchApplication" is-config="true" duration-ms="8858" started-at="2018-12-08T06:49:10Z" finished-at="2018-12-08T06:49:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@704b2127]]>
+                <![CDATA[org.testng.TestRunner@10e31a9a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method status="PASS" signature="testDataProvider2(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:package1.testDataProvider@548e7350]" name="testDataProvider2" duration-ms="9" started-at="2018-09-22T08:12:23Z" data-provider="DataProvider1" finished-at="2018-09-22T08:12:23Z">
+        <test-method status="PASS" signature="ToSignUpOnJOTFormsVerification(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:package1.ToSignUpOnJOTForms@343f4d3d]" name="ToSignUpOnJOTFormsVerification" duration-ms="1633" started-at="2018-12-08T06:49:19Z" data-provider="JOT_SignUp_Data" finished-at="2018-12-08T06:49:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[test]]>
+                <![CDATA[testttttt125222]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[test]]>
+                <![CDATA[test5896578@mailinator.com]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[test]]>
+                <![CDATA[waste123]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDataProvider2 -->
-        <test-method status="PASS" signature="quitWebdriver(org.testng.ITestContext)[pri:0, instance:package1.testDataProvider@548e7350]" name="quitWebdriver" is-config="true" duration-ms="643" started-at="2018-09-22T08:12:23Z" finished-at="2018-09-22T08:12:24Z">
+        </test-method> <!-- ToSignUpOnJOTFormsVerification -->
+        <test-method status="PASS" signature="quitWebdriver(org.testng.ITestContext)[pri:0, instance:package1.ToSignUpOnJOTForms@343f4d3d]" name="quitWebdriver" is-config="true" duration-ms="643" started-at="2018-12-08T06:49:21Z" finished-at="2018-12-08T06:49:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@704b2127]]>
+                <![CDATA[org.testng.TestRunner@10e31a9a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitWebdriver -->
-        <test-method status="PASS" signature="launchApplication(org.testng.ITestContext)[pri:0, instance:package1.testDataProvider@548e7350]" name="launchApplication" is-config="true" duration-ms="4913" started-at="2018-09-22T08:12:24Z" finished-at="2018-09-22T08:12:29Z">
+        <test-method status="PASS" signature="launchApplication(org.testng.ITestContext)[pri:0, instance:package1.ToSignUpOnJOTForms@343f4d3d]" name="launchApplication" is-config="true" duration-ms="6508" started-at="2018-12-08T06:49:22Z" finished-at="2018-12-08T06:49:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@704b2127]]>
+                <![CDATA[org.testng.TestRunner@10e31a9a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method status="PASS" signature="testDataProvider2(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:package1.testDataProvider@548e7350]" name="testDataProvider2" duration-ms="1" started-at="2018-09-22T08:12:29Z" data-provider="DataProvider1" finished-at="2018-09-22T08:12:29Z">
+        <test-method status="PASS" signature="ToSignUpOnJOTFormsVerification(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:package1.ToSignUpOnJOTForms@343f4d3d]" name="ToSignUpOnJOTFormsVerification" duration-ms="1467" started-at="2018-12-08T06:49:28Z" data-provider="JOT_SignUp_Data" finished-at="2018-12-08T06:49:30Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[test]]>
+                <![CDATA[testttttt125223]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[test]]>
+                <![CDATA[test5896579@mailinator.com]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[test]]>
+                <![CDATA[waste123]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDataProvider2 -->
-        <test-method status="PASS" signature="quitWebdriver(org.testng.ITestContext)[pri:0, instance:package1.testDataProvider@548e7350]" name="quitWebdriver" is-config="true" duration-ms="612" started-at="2018-09-22T08:12:29Z" finished-at="2018-09-22T08:12:29Z">
+        </test-method> <!-- ToSignUpOnJOTFormsVerification -->
+        <test-method status="PASS" signature="quitWebdriver(org.testng.ITestContext)[pri:0, instance:package1.ToSignUpOnJOTForms@343f4d3d]" name="quitWebdriver" is-config="true" duration-ms="602" started-at="2018-12-08T06:49:30Z" finished-at="2018-12-08T06:49:30Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@704b2127]]>
+                <![CDATA[org.testng.TestRunner@10e31a9a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitWebdriver -->
-        <test-method status="PASS" signature="sendReportEmail()[pri:0, instance:package1.testDataProvider@548e7350]" name="sendReportEmail" is-config="true" duration-ms="312" started-at="2018-09-22T08:12:29Z" finished-at="2018-09-22T08:12:30Z">
+        <test-method status="PASS" signature="sendReportEmail()[pri:0, instance:package1.ToSignUpOnJOTForms@343f4d3d]" name="sendReportEmail" is-config="true" duration-ms="355" started-at="2018-12-08T06:49:30Z" finished-at="2018-12-08T06:49:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendReportEmail -->
-      </class> <!-- package1.testDataProvider -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- package1.ToSignUpOnJOTForms -->
+    </test> <!-- test1 -->
+  </suite> <!-- test suite -->
 </testng-results>

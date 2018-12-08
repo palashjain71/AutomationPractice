@@ -22,7 +22,6 @@ import TestData.GlobalTestData;
 public class BaseClass {
 
 	public static WebDriver driver;
-
 	public static ExtentTest test;
 	public static ExtentReports extent;
 	public static ExtentHtmlReporter htmlReporter;

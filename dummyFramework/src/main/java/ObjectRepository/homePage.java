@@ -2,7 +2,6 @@ package ObjectRepository;
 
 
 import java.util.NoSuchElementException;
-import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,7 +13,6 @@ public class homePage {
 
 	WebDriver driver;
 	ExtentTest test;
-	Properties prop;
 
 	public homePage(WebDriver driver, ExtentTest test) {
 		this.driver = driver;
@@ -23,23 +21,40 @@ public class homePage {
 	}
 
 	
-	@FindBy(xpath = "//div[@class='NaturalLanguageDropdown third ']//span[@class='isvg loaded carret-down']")
-	WebElement ServiceType;
-
-	@FindBy(xpath = ".//a[@class='GetMeStarted btn btnGetStarted']")
-	WebElement GetStarted;
-
-	public void handleSurvey() {
-		boolean present;
-		try {
-			
-			present = true;
-		} catch (NoSuchElementException e) {
-			present = false;
-		}
-		if (present) {
-			report.PassTest(test, "Survey_Option_Present");
-		}
+	@FindBy(xpath= "//a[text()='Sign Up']")
+	WebElement signUpLink;
+	
+	
+	public void clickOnSignUp() {
+		signUpLink.click();
+		report.InfoTest(test, "Clicked on sign up link");
 	}
-
+	
+	
+	@FindBy(xpath= "//input[@id='jfHeader_suUsername']")
+	WebElement userNameTextBox;
+	@FindBy(xpath= "//input[@id='jfHeader_suEmail']")
+	WebElement EmailTextBoxLink;
+	@FindBy(xpath= "//input[@id='jfHeader_suPassword']")
+	WebElement passwordTextBox;
+	@FindBy(xpath= "//input[@id='jfHeader_suPasswordConf']")
+	WebElement confirmPasswordTextBox;
+	
+	@FindBy(xpath= "//button[@id='jfHeader_signupButton']")
+	WebElement confirmBtn;
+	
+	
+	public void fillSignupForm(String username, String email,String password) {
+		
+		userNameTextBox.sendKeys(username);
+		EmailTextBoxLink.sendKeys(email);
+		passwordTextBox.sendKeys(password);
+		confirmPasswordTextBox.sendKeys(password);
+		
+		report.PassTest(test, driver, "sign up form filled", "signup");
+		confirmBtn.click();
+		report.InfoTest(test, "btn Clicked");
+		
+	}
+	
 	}
