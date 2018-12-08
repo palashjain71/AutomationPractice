@@ -12,15 +12,12 @@ public class propertiesRead {
 		Properties prop = new Properties();
 		InputStream input = null;
 		try {
-			
-			input = new FileInputStream(System.getProperty("user.dir")+"\\TestData.properties");
-			
+			input = new FileInputStream(System.getProperty("user.dir") + "\\TestData.properties");
 			prop.load(input);
 
 		} catch (IOException ex) {
 			ex.printStackTrace();
-		} 
-		finally {
+		} finally {
 			if (input != null) {
 				try {
 					input.close();

@@ -1,10 +1,7 @@
 package pakge2;
 
 import java.io.IOException;
-
 import org.testng.annotations.Test;
-
-import ObjectRepository.homePage;
 import SupportLibraries.report;
 import package1.BaseClass;
 
@@ -19,7 +16,7 @@ public class test1 extends BaseClass {
 
 			
 
-			homePage hp = new homePage(driver, test);
+			
 			report.InfoTest(test, "Navigate to customer support Page");
 			
 

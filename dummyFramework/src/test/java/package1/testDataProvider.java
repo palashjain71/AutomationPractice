@@ -12,7 +12,7 @@ public class testDataProvider extends BaseClass {
 	@Test(dataProvider = "DataProvider1")
 	public void testDataProvider2(String MailAddress, String DeliveryAdd, String FirstName) throws Exception {
 		try {
-
+			
 			System.out.println(MailAddress);
 			System.out.println(DeliveryAdd);
 			System.out.println(FirstName);
@@ -30,4 +30,6 @@ public class testDataProvider extends BaseClass {
 		return arrayObject;
 	}
 
+
+	
 }

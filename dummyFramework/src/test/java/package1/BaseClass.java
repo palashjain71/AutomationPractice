@@ -31,7 +31,7 @@ public class BaseClass {
 	public static Properties prop;
 	public static String ResultFolderPath;
 	public static String TestDataSheetPath = System.getProperty("user.dir") + "\\src\\main\\java\\TestData\\";
-
+	
 	@BeforeSuite
 	public void initializeWebdriver() throws IOException, InterruptedException {
 
