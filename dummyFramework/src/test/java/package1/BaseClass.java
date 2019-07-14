@@ -30,7 +30,7 @@ public class BaseClass {
 	public static Properties prop;
 	public static String ResultFolderPath;
 	public static String TestDataSheetPath = System.getProperty("user.dir") + "\\src\\main\\java\\TestData\\";
-	
+
 	@BeforeSuite
 	public void initializeWebdriver() throws IOException, InterruptedException {
 
@@ -41,17 +41,9 @@ public class BaseClass {
 		extent = report.StartExtentReport(htmlReporter, extent);
 	}
 
-	@BeforeClass
-	public void beforeTestKillBrowser(ITestContext contextContext) {
-		try {
-			test = report.testCreate(extent, test, "Test :->> " + contextContext.getName());
-		} catch (Exception e) {
-			e.getMessage();
-		}
-	}
-
 	@BeforeMethod
 	public void launchApplication(ITestContext contextContext) throws MalformedURLException {
+		test = report.testCreate(extent, test, "Test :->> " + contextContext.getName());
 		driver = BrowserOpen.StartBrowser(driver, prop.getProperty("browserName"), prop.getProperty("URL"));
 
 	}
@@ -59,10 +51,6 @@ public class BaseClass {
 	@AfterMethod
 	public void quitWebdriver(ITestContext contextContext) {
 		driver.quit();
-	}
-
-	@AfterSuite
-	public void sendReportEmail() {
 		report.endReport(extent);
 	}
 }

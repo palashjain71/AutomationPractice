@@ -43,10 +43,10 @@ public class MOF_HomePage {
 		report.InfoTest(test, "Sign Up link clicked");
 	}
 
-	@FindBy(xpath = "//div[@class='register-now-link']//a[@href='/signup']")
+	@FindBy(xpath = "//input[@placeholder='Email address']")
 	private WebElement txt_username;
 
-	@FindBy(xpath = "//div[@class='register-now-link']//a[@href='/signup']")
+	@FindBy(xpath = "//input[@placeholder='Password']")
 	private WebElement txt_password;
 
 	public void enterloginDetials(String username, String password) {
@@ -55,6 +55,7 @@ public class MOF_HomePage {
 		Util.sendKeysToElement(driver, txt_password, password, true);
 		report.InfoTest(test, "usernme entered -->" + username + 
 				"password enter --> " + password);
+		Util.HardWait(1000);
 	}
 
 }
