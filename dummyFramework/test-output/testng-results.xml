@@ -1,118 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="test suite" duration-ms="20382" started-at="2018-12-08T06:49:10Z" finished-at="2018-12-08T06:49:30Z">
+  <suite name="Default suite" duration-ms="90753" started-at="2019-07-14T04:54:01Z" finished-at="2019-07-14T04:55:32Z">
     <groups>
     </groups>
-    <test name="test1" duration-ms="20382" started-at="2018-12-08T06:49:10Z" finished-at="2018-12-08T06:49:30Z">
-      <class name="package1.ToSignUpOnJOTForms">
-        <test-method status="PASS" signature="initializeWebdriver()[pri:0, instance:package1.ToSignUpOnJOTForms@343f4d3d]" name="initializeWebdriver" is-config="true" duration-ms="1432" started-at="2018-12-08T06:49:08Z" finished-at="2018-12-08T06:49:10Z">
+    <test name="Default test" duration-ms="90753" started-at="2019-07-14T04:54:01Z" finished-at="2019-07-14T04:55:32Z">
+      <class name="MOF_testcases.toRegisterUser">
+        <test-method status="PASS" signature="initializeWebdriver()[pri:0, instance:MOF_testcases.toRegisterUser@5442a311]" name="initializeWebdriver" is-config="true" duration-ms="1449" started-at="2019-07-14T04:53:59Z" finished-at="2019-07-14T04:54:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeWebdriver -->
-        <test-method status="PASS" signature="beforeTestKillBrowser(org.testng.ITestContext)[pri:0, instance:package1.ToSignUpOnJOTForms@343f4d3d]" name="beforeTestKillBrowser" is-config="true" duration-ms="8" started-at="2018-12-08T06:49:10Z" finished-at="2018-12-08T06:49:10Z">
+        <test-method status="PASS" signature="beforeTestKillBrowser(org.testng.ITestContext)[pri:0, instance:MOF_testcases.toRegisterUser@5442a311]" name="beforeTestKillBrowser" is-config="true" duration-ms="11" started-at="2019-07-14T04:54:01Z" finished-at="2019-07-14T04:54:01Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@10e31a9a]]>
+                <![CDATA[org.testng.TestRunner@4dcbae55]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestKillBrowser -->
-        <test-method status="PASS" signature="launchApplication(org.testng.ITestContext)[pri:0, instance:package1.ToSignUpOnJOTForms@343f4d3d]" name="launchApplication" is-config="true" duration-ms="8858" started-at="2018-12-08T06:49:10Z" finished-at="2018-12-08T06:49:19Z">
+        <test-method status="PASS" signature="launchApplication(org.testng.ITestContext)[pri:0, instance:MOF_testcases.toRegisterUser@5442a311]" name="launchApplication" is-config="true" duration-ms="38772" started-at="2019-07-14T04:54:01Z" finished-at="2019-07-14T04:54:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@10e31a9a]]>
+                <![CDATA[org.testng.TestRunner@4dcbae55]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method status="PASS" signature="ToSignUpOnJOTFormsVerification(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:package1.ToSignUpOnJOTForms@343f4d3d]" name="ToSignUpOnJOTFormsVerification" duration-ms="1633" started-at="2018-12-08T06:49:19Z" data-provider="JOT_SignUp_Data" finished-at="2018-12-08T06:49:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testttttt125222]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test5896578@mailinator.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[waste123]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="toTestRegisteruserFunctionality()[pri:0, instance:MOF_testcases.toRegisterUser@5442a311]" name="toTestRegisteruserFunctionality" duration-ms="51340" started-at="2019-07-14T04:54:40Z" finished-at="2019-07-14T04:55:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ToSignUpOnJOTFormsVerification -->
-        <test-method status="PASS" signature="quitWebdriver(org.testng.ITestContext)[pri:0, instance:package1.ToSignUpOnJOTForms@343f4d3d]" name="quitWebdriver" is-config="true" duration-ms="643" started-at="2018-12-08T06:49:21Z" finished-at="2018-12-08T06:49:22Z">
+        </test-method> <!-- toTestRegisteruserFunctionality -->
+        <test-method status="PASS" signature="quitWebdriver(org.testng.ITestContext)[pri:0, instance:MOF_testcases.toRegisterUser@5442a311]" name="quitWebdriver" is-config="true" duration-ms="606" started-at="2019-07-14T04:55:31Z" finished-at="2019-07-14T04:55:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@10e31a9a]]>
+                <![CDATA[org.testng.TestRunner@4dcbae55]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitWebdriver -->
-        <test-method status="PASS" signature="launchApplication(org.testng.ITestContext)[pri:0, instance:package1.ToSignUpOnJOTForms@343f4d3d]" name="launchApplication" is-config="true" duration-ms="6508" started-at="2018-12-08T06:49:22Z" finished-at="2018-12-08T06:49:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@10e31a9a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method status="PASS" signature="ToSignUpOnJOTFormsVerification(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:package1.ToSignUpOnJOTForms@343f4d3d]" name="ToSignUpOnJOTFormsVerification" duration-ms="1467" started-at="2018-12-08T06:49:28Z" data-provider="JOT_SignUp_Data" finished-at="2018-12-08T06:49:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testttttt125223]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test5896579@mailinator.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[waste123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ToSignUpOnJOTFormsVerification -->
-        <test-method status="PASS" signature="quitWebdriver(org.testng.ITestContext)[pri:0, instance:package1.ToSignUpOnJOTForms@343f4d3d]" name="quitWebdriver" is-config="true" duration-ms="602" started-at="2018-12-08T06:49:30Z" finished-at="2018-12-08T06:49:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@10e31a9a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitWebdriver -->
-        <test-method status="PASS" signature="sendReportEmail()[pri:0, instance:package1.ToSignUpOnJOTForms@343f4d3d]" name="sendReportEmail" is-config="true" duration-ms="355" started-at="2018-12-08T06:49:30Z" finished-at="2018-12-08T06:49:31Z">
+        <test-method status="PASS" signature="sendReportEmail()[pri:0, instance:MOF_testcases.toRegisterUser@5442a311]" name="sendReportEmail" is-config="true" duration-ms="419" started-at="2019-07-14T04:55:32Z" finished-at="2019-07-14T04:55:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendReportEmail -->
-      </class> <!-- package1.ToSignUpOnJOTForms -->
-    </test> <!-- test1 -->
-  </suite> <!-- test suite -->
+      </class> <!-- MOF_testcases.toRegisterUser -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

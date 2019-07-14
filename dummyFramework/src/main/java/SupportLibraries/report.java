@@ -90,7 +90,7 @@ public class report {
 		try {
 
 			String ResultFolderPath = System.getProperty("user.dir") + "\\test-output\\"
-					+ GlobalTestData.CurrentDateFolder + "\\IndividualTestReports\\ScreenShot";
+					+ GlobalTestData.CurrentDateFolder + "\\ScreenShot";
 			Util.CreateFolder(ResultFolderPath);
 			String screenshotPath = Util.capture(driver, screenshotName, ResultFolderPath);
 			String relativePath = "ScreenShot/" + screenshotPath;

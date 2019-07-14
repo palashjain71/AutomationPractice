@@ -11,4 +11,6 @@ public class GlobalTestData {
 	public static final String Address2 = "Houston";
 	public static final String City = "testCity";
 	public static final String Zip = "12828";
+	public static final String mobileNubmer = "7896541230";
+	public static final String officePhonNumber = "7894563210";
 }
